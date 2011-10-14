@@ -1,0 +1,20 @@
+<!DOCTYPE openCSVAtlasDef>
+<CSVAtlas>
+ <CSVMap>
+  <Name>roba_map</Name>
+  <Table>public.item</Table>
+  <Action>Insert</Action>
+  <Description>Insert skripta koja služi za import podataka šifrarnika robe fmk u xtuple bazu.</Description>
+  <PreSQL>DELETE FROM item;</PreSQL>
+  <CSVMapField>
+   <Name>item_number</Name>
+   <Type>QString</Type>
+   <Column>1</Column>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_descrip1</Name>
+   <Type>QString</Type>
+   <Column>2</Column>
+  </CSVMapField>
+ </CSVMap>
+</CSVAtlas>
