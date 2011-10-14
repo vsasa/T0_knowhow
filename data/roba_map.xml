@@ -5,7 +5,8 @@
   <Table>public.item</Table>
   <Action>Insert</Action>
   <Description>Insert skripta koja služi za import podataka šifrarnika robe fmk u xtuple bazu.</Description>
-  <PreSQL>DELETE FROM item;</PreSQL>
+  <PreSQL>-- briši sve iz sljedećih tabela
+DELETE FROM item;</PreSQL>
   <CSVMapField>
    <Name>item_number</Name>
    <Type>QString</Type>
@@ -15,6 +16,114 @@
    <Name>item_descrip1</Name>
    <Type>QString</Type>
    <Column>2</Column>
+   <IfNull>UseAlternateValue</IfNull>
+   <AltValue>NEMA NAZIVA</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_picklist</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>TRUE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_sold</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>TRUE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_active</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>TRUE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_type</Name>
+   <Action>UseAlternateValue</Action>
+   <AltValue>P</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_exclusive</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>FALSE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_listprice</Name>
+   <Type>double</Type>
+   <Column>6</Column>
+   <IfNull>UseAlternateValue</IfNull>
+   <AltValue>0</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_config</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>FALSE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_upccode</Name>
+   <Type>QString</Type>
+   <Column>21</Column>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_classcode_id</Name>
+   <Type>int</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>41</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_prodcat_id</Name>
+   <Type>int</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>37</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_inv_uom_id</Name>
+   <Type>int</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>35</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_price_uom_id</Name>
+   <Type>int</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>35</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_fractional</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>FALSE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_prodweight</Name>
+   <Type>double</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>0</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_packweight</Name>
+   <Type>double</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>0</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_maxcost</Name>
+   <Type>double</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>0</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_tax_recoverable</Name>
+   <Type>bool</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>FALSE</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>item_descrip2</Name>
+   <Type>QString</Type>
+   <Action>UseEmptyString</Action>
   </CSVMapField>
  </CSVMap>
 </CSVAtlas>
