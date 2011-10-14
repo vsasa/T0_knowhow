@@ -1,3 +1,4 @@
+0.1.0, vsasa, init skripta za import šifrarnika robe u xtuple, [pogledaj #24825](http://redmine.bring.out.ba/issues/24825) 
 
 ----------------------------
 
