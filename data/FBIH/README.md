@@ -24,7 +24,7 @@ Otvoriti tabelu konto.dbf u openoffice-u te uraditi sljedeće korake:
 * ostaviti kolone ID i NAZIV, sve ostalo ukloniti
 * izbrisati prvi red sa definicijama naziva polja
 * izvršiti konverziju naših karaktera č, ć, ž...
+* izvršiti konverziju na polju naziva, mjenjamo , (zarez) sa prazno - OVAJ KORAK JE JAKO BITAN!!!
 * kolonu NAZIV konvertovati u velika slova, selektujemo kompletnu kolonu pa Format->ChangeCase->to Uppercase
 * snimamo fajl kao CSV fajl i pri tome odabiremo sljedeće parametre, field delimiter: , (zarez), text delimiter: prazno
-
 
