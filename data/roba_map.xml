@@ -6,7 +6,8 @@
   <Action>Insert</Action>
   <Description>Insert skripta koja služi za import podataka šifrarnika robe fmk u xtuple bazu.</Description>
   <PreSQL>-- briši sve iz sljedećih tabela
-DELETE FROM item;</PreSQL>
+DELETE FROM item;
+DELETE FROM itemtax;</PreSQL>
   <PostSQL>-- Usluge prebaci na tip usluge "R"
 UPDATE item SET item_type = 'R' WHERE item_comments = 'U';
 -- resetuj polje comments, ne treba nam više
@@ -15,7 +16,14 @@ UPDATE item SET item_comments = '';
 -- setuj jedinice mjere
 UPDATE item SET item_inv_uom_id = (SELECT uom_id FROM uom WHERE uom_name = upper(item.item_descrip2)) WHERE item_descrip2 &lt;> '' AND upper(item_descrip2) IN (SELECT uom_name FROM uom);
 -- resetuj jedinice mjere
-UPDATE item SET item_descrip2 = '';</PostSQL>
+UPDATE item SET item_descrip2 = '';
+
+-- setuj poreze na PDV17
+INSERT INTO itemtax (itemtax_item_id, itemtax_taxtype_id, itemtax_taxzone_id) 
+SELECT item_id, 
+   (SELECT taxtype_id FROM taxtype WHERE upper(taxtype_name) = 'PDV17'), 
+   (SELECT taxzone_id FROM taxzone WHERE upper(taxzone_code) = 'FBIH') 
+FROM item;</PostSQL>
   <CSVMapField>
    <Name>item_number</Name>
    <Type>QString</Type>
