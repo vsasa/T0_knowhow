@@ -1,3 +1,5 @@
+0.1.2, vsasa, kreirana šema i import tabele partnera, pogledaj [aktivnost #24826](http://redmine.bring.out.ba/issues/24826)
+
 0.1.1, vsasa, definisani porezi i razrađena šema pri importu, [pogledaj #24825 note 47](http://redmine.bring.out.ba/issues/24825#note-47) i
 [aktivnost #24856](http://redmine.bring.out.ba/issues/24856) 
 
