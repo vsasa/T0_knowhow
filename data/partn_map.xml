@@ -5,6 +5,25 @@
   <Table>api.account</Table>
   <Action>Insert</Action>
   <Description>Ovo je insert šema za CRM accounts šifranik</Description>
+  <PreSQL>-- insert vendor types
+insert into api.vendortype(
+ code,
+ description
+)
+VALUES (
+ 'DD',
+ 'Dobavljači - domaći'
+);
+
+-- insert customer types
+insert into api.customertype(
+ code,
+ description
+)
+VALUES (
+ 'KD',
+ 'Kupci - domaći'
+);</PreSQL>
   <CSVMapField>
    <Name>account_number</Name>
    <Type>QString</Type>
@@ -87,7 +106,7 @@
    <Name>customer_type</Name>
    <Type>QString</Type>
    <Action>UseAlternateValue</Action>
-   <AltValue>DOMAĆI PARTNERI</AltValue>
+   <AltValue>KD</AltValue>
   </CSVMapField>
   <CSVMapField>
    <Name>customer_name</Name>
@@ -144,7 +163,7 @@
    <Name>vendor_type</Name>
    <Type>QString</Type>
    <Action>UseAlternateValue</Action>
-   <AltValue>DOMAĆI DOBAVLJAČI</AltValue>
+   <AltValue>DD</AltValue>
   </CSVMapField>
   <CSVMapField>
    <Name>vendor_name</Name>
