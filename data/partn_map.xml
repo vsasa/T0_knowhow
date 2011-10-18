@@ -23,6 +23,18 @@ insert into api.customertype(
 VALUES (
  'KD',
  'Kupci - domaći'
+);
+
+-- insert sales representative
+insert into api.salesrep (
+  number,
+  active,
+  name
+)
+VALUES (
+  'DEFAULT',
+  TRUE,
+  'default postavka'
 );</PreSQL>
   <CSVMapField>
    <Name>account_number</Name>
