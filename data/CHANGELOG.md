@@ -1,3 +1,5 @@
+0.1.4, vsasa, dadao u šemu za import robe upis i item_site-a, pogledaj [aktivnost #24857](http://redmine.bring.out.ba/issues/24857)
+
 0.1.3, vsasa, dodao u šemu za import partnera da se setuju adrese dobavljača i kupca a ne samo u CRM
 
 0.1.2, vsasa, kreirana šema i import tabele partnera, pogledaj [aktivnost #24826](http://redmine.bring.out.ba/issues/24826)

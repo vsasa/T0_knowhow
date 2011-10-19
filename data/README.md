@@ -51,6 +51,13 @@ Tek kada su svi ovi uslovi zadovoljeni, možemo da počnemo sa procedurom import
 
 Procedura importa je jako zahtjevna i traži dosta vremena, zato budite strpljivi :)
 
+Nakon što smo importovali bazni šifrarnik artikala, potrebno je odabrati drugu map šemu iz liste, a to je 
+
+* roba_itemsite šema
+
+i u polje 'Item_site' unjeti odgovarajući site, recimo 1320, pa ponoviti ako ih ima više i ako je potrebno,
+samo mjenjajući vrijednost tog polja na drugi site itd...
+
 
 Priprema csv fajla iz partn.dbf tabele
 ---------------------------------------
