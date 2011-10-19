@@ -160,6 +160,58 @@ VALUES (
    <Action>UseAlternateValue</Action>
    <AltValue>DEFAULT</AltValue>
   </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_honorific</Name>
+   <Type>QString</Type>
+   <Column>1</Column>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_first</Name>
+   <Type>QString</Type>
+   <Column>2</Column>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_voice</Name>
+   <Type>QString</Type>
+   <Column>9</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_alternate</Name>
+   <Type>QString</Type>
+   <Column>12</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_fax</Name>
+   <Type>QString</Type>
+   <Column>11</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_address1</Name>
+   <Type>QString</Type>
+   <Column>6</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_city</Name>
+   <Type>QString</Type>
+   <Column>5</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_state</Name>
+   <Type>QString</Type>
+   <Column>5</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>billing_contact_postalcode</Name>
+   <Type>QString</Type>
+   <Column>4</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
  </CSVMap>
  <CSVMap>
   <Name>map_vendor</Name>
@@ -198,6 +250,64 @@ VALUES (
    <Name>ship_via</Name>
    <Type>QString</Type>
    <Action>UseEmptyString</Action>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>address1</Name>
+   <Type>QString</Type>
+   <Column>6</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>city</Name>
+   <Type>QString</Type>
+   <Column>5</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>state</Name>
+   <Type>QString</Type>
+   <Column>5</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>postalcode</Name>
+   <Type>QString</Type>
+   <Column>4</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>default_tax_zone</Name>
+   <Type>QString</Type>
+   <Action>UseAlternateValue</Action>
+   <AltValue>FBiH</AltValue>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>contact1_first</Name>
+   <Type>QString</Type>
+   <Column>2</Column>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>contact1_voice</Name>
+   <Type>QString</Type>
+   <Column>9</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>contact1_alternate</Name>
+   <Type>QString</Type>
+   <Column>12</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>contact1_fax</Name>
+   <Type>QString</Type>
+   <Column>11</Column>
+   <IfNull>UseEmptyString</IfNull>
+  </CSVMapField>
+  <CSVMapField>
+   <Name>contact1_honorific</Name>
+   <Type>QString</Type>
+   <Column>1</Column>
   </CSVMapField>
  </CSVMap>
  <CSVMap>
